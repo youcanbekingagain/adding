@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  /* color: #eee; */
+  background-color: #222;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: rgb(243, 13, 13);
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+#call {
+  border: none;
+  background-color: #eee;
+  color: rgb(243, 13, 13);
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+
+  position: fixed; /* or absolute */
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#call:hover{
+  background-color: rgb(215, 225, 24);
+}
+
+.btn:hover {
+  background-color: rgb(215, 225, 24);
+}
+.centered {
+  position: fixed; /* or absolute */
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#map {
+  height: 400px !important;
+  /* width: 100px; */
+}
