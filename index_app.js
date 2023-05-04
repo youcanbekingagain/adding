@@ -5,7 +5,7 @@ const app = express();
 app.listen(3000, () => {
   console.log("listening");
 });
-app.use(express.static("public"));
+app.use(express.static("./"));
 app.use(express.json({ limit: "1mb" }));
 // #database
 const database_1 = new Datastore("database.db");
