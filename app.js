@@ -54,11 +54,9 @@ if ("geolocation" in navigator) {
     //Ambulaance location
 
     document.getElementById("call").addEventListener("click", async () => {
-var amb_lat=0;
-var amb_lng=0;
-// const victim_lat = data.lat
-// const victim_lng = data.lng
-const string_api = "https://api.geoapify.com/v2/places?categories=healthcare.hospital&filter=circle:77.51818965029108,12.90153845,3000&bias=proximity:77.51818965029108,12.90153845&limit=5&apiKey=7ac85dd6c12942fb9ab33242da6da854"
+var victim_lat=data.lat;
+var victim_lng=data.lng;
+const string_api = `https://api.geoapify.com/v2/places?categories=healthcare.hospital&filter=circle:${victim_lng},${victim_lat},5000&bias=proximity:${victim_lng},${victim_lat}&limit=5&apiKey=7ac85dd6c12942fb9ab33242da6da854`
 console.log(string_api)
 
 var result={}
